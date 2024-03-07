@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC8DB5522B990D370061FE3A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5512B990D370061FE3A /* LoginView.swift */; };
+		AC8DB5542B990D450061FE3A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5532B990D450061FE3A /* HeaderView.swift */; };
+		AC8DB5572B990D960061FE3A /* TextWithSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5562B990D960061FE3A /* TextWithSubtitle.swift */; };
+		AC8DB55C2B9910420061FE3A /* LoginView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */; };
+		AC8DB55E2B991DF00061FE3A /* Vector.svg in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB55D2B991DF00061FE3A /* Vector.svg */; };
+		AC8DB5622B9923170061FE3A /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5612B9923170061FE3A /* PasswordView.swift */; };
+		AC8DB5642B9924060061FE3A /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5632B9924060061FE3A /* EmailView.swift */; };
+		AC8DB5672B9924800061FE3A /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5662B9924800061FE3A /* LoginButtonView.swift */; };
+		ACA0D3682B99A8A300A61572 /* ResizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA0D3672B99A8A300A61572 /* ResizeImage.swift */; };
+		ACBB54B52B98F3EB00774132 /* zaliczenie_bryndalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */; };
+		ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B62B98F3EB00774132 /* ContentView.swift */; };
+		ACBB54B92B98F3EC00774132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB54B82B98F3EC00774132 /* Assets.xcassets */; };
+		ACBB54BC2B98F3EC00774132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB54BB2B98F3EC00774132 /* Preview Assets.xcassets */; };
+		ACBB54C62B98F3EC00774132 /* zaliczenie_bryndalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54C52B98F3EC00774132 /* zaliczenie_bryndalTests.swift */; };
+		ACBB54D02B98F3EC00774132 /* zaliczenie_bryndalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54CF2B98F3EC00774132 /* zaliczenie_bryndalUITests.swift */; };
+		ACBB54D22B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54D12B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACBB54C22B98F3EC00774132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBB54A92B98F3EB00774132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBB54B02B98F3EB00774132;
+			remoteInfo = zaliczenie_bryndal;
+		};
+		ACBB54CC2B98F3EC00774132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBB54A92B98F3EB00774132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBB54B02B98F3EB00774132;
+			remoteInfo = zaliczenie_bryndal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC8DB5512B990D370061FE3A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AC8DB5532B990D450061FE3A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		AC8DB5562B990D960061FE3A /* TextWithSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithSubtitle.swift; sourceTree = "<group>"; };
+		AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.ViewModel.swift; sourceTree = "<group>"; };
+		AC8DB55D2B991DF00061FE3A /* Vector.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vector.svg; path = ../../../../../Downloads/Vector.svg; sourceTree = "<group>"; };
+		AC8DB5612B9923170061FE3A /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		AC8DB5632B9924060061FE3A /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		AC8DB5662B9924800061FE3A /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
+		ACA0D3672B99A8A300A61572 /* ResizeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeImage.swift; sourceTree = "<group>"; };
+		ACBB54B12B98F3EB00774132 /* zaliczenie_bryndal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zaliczenie_bryndal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalApp.swift; sourceTree = "<group>"; };
+		ACBB54B62B98F3EB00774132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACBB54B82B98F3EC00774132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACBB54BB2B98F3EC00774132 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACBB54C12B98F3EC00774132 /* zaliczenie_bryndalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zaliczenie_bryndalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBB54C52B98F3EC00774132 /* zaliczenie_bryndalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalTests.swift; sourceTree = "<group>"; };
+		ACBB54CB2B98F3EC00774132 /* zaliczenie_bryndalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zaliczenie_bryndalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBB54CF2B98F3EC00774132 /* zaliczenie_bryndalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalUITests.swift; sourceTree = "<group>"; };
+		ACBB54D12B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBB54AE2B98F3EB00774132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB54BE2B98F3EC00774132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB54C82B98F3EC00774132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC8DB54C2B990CEE0061FE3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB54D2B990D020061FE3A /* Components */,
+				AC8DB5512B990D370061FE3A /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC8DB54D2B990D020061FE3A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB5652B9924730061FE3A /* Buttons */,
+				AC8DB5552B990D840061FE3A /* Texts */,
+				AC8DB5532B990D450061FE3A /* HeaderView.swift */,
+				AC8DB5612B9923170061FE3A /* PasswordView.swift */,
+				AC8DB5632B9924060061FE3A /* EmailView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AC8DB5552B990D840061FE3A /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB5562B990D960061FE3A /* TextWithSubtitle.swift */,
+			);
+			path = Texts;
+			sourceTree = "<group>";
+		};
+		AC8DB55A2B9910250061FE3A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AC8DB5652B9924730061FE3A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB5662B9924800061FE3A /* LoginButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		ACA0D3662B99A89500A61572 /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				ACA0D3672B99A8A300A61572 /* ResizeImage.swift */,
+			);
+			path = extentions;
+			sourceTree = "<group>";
+		};
+		ACBB54A82B98F3EB00774132 = {
+			isa = PBXGroup;
+			children = (
+				ACBB54B32B98F3EB00774132 /* zaliczenie_bryndal */,
+				ACBB54C42B98F3EC00774132 /* zaliczenie_bryndalTests */,
+				ACBB54CE2B98F3EC00774132 /* zaliczenie_bryndalUITests */,
+				ACBB54B22B98F3EB00774132 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBB54B22B98F3EB00774132 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB54B12B98F3EB00774132 /* zaliczenie_bryndal.app */,
+				ACBB54C12B98F3EC00774132 /* zaliczenie_bryndalTests.xctest */,
+				ACBB54CB2B98F3EC00774132 /* zaliczenie_bryndalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBB54B32B98F3EB00774132 /* zaliczenie_bryndal */ = {
+			isa = PBXGroup;
+			children = (
+				ACA0D3662B99A89500A61572 /* extentions */,
+				AC8DB55A2B9910250061FE3A /* ViewModels */,
+				AC8DB54C2B990CEE0061FE3A /* Views */,
+				ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */,
+				ACBB54B62B98F3EB00774132 /* ContentView.swift */,
+				ACBB54B82B98F3EC00774132 /* Assets.xcassets */,
+				AC8DB55D2B991DF00061FE3A /* Vector.svg */,
+				ACBB54BA2B98F3EC00774132 /* Preview Content */,
+			);
+			path = zaliczenie_bryndal;
+			sourceTree = "<group>";
+		};
+		ACBB54BA2B98F3EC00774132 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB54BB2B98F3EC00774132 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACBB54C42B98F3EC00774132 /* zaliczenie_bryndalTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB54C52B98F3EC00774132 /* zaliczenie_bryndalTests.swift */,
+			);
+			path = zaliczenie_bryndalTests;
+			sourceTree = "<group>";
+		};
+		ACBB54CE2B98F3EC00774132 /* zaliczenie_bryndalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB54CF2B98F3EC00774132 /* zaliczenie_bryndalUITests.swift */,
+				ACBB54D12B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift */,
+			);
+			path = zaliczenie_bryndalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBB54B02B98F3EB00774132 /* zaliczenie_bryndal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBB54D52B98F3EC00774132 /* Build configuration list for PBXNativeTarget "zaliczenie_bryndal" */;
+			buildPhases = (
+				ACBB54AD2B98F3EB00774132 /* Sources */,
+				ACBB54AE2B98F3EB00774132 /* Frameworks */,
+				ACBB54AF2B98F3EB00774132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zaliczenie_bryndal;
+			productName = zaliczenie_bryndal;
+			productReference = ACBB54B12B98F3EB00774132 /* zaliczenie_bryndal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACBB54C02B98F3EC00774132 /* zaliczenie_bryndalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBB54D82B98F3EC00774132 /* Build configuration list for PBXNativeTarget "zaliczenie_bryndalTests" */;
+			buildPhases = (
+				ACBB54BD2B98F3EC00774132 /* Sources */,
+				ACBB54BE2B98F3EC00774132 /* Frameworks */,
+				ACBB54BF2B98F3EC00774132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBB54C32B98F3EC00774132 /* PBXTargetDependency */,
+			);
+			name = zaliczenie_bryndalTests;
+			productName = zaliczenie_bryndalTests;
+			productReference = ACBB54C12B98F3EC00774132 /* zaliczenie_bryndalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACBB54CA2B98F3EC00774132 /* zaliczenie_bryndalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBB54DB2B98F3EC00774132 /* Build configuration list for PBXNativeTarget "zaliczenie_bryndalUITests" */;
+			buildPhases = (
+				ACBB54C72B98F3EC00774132 /* Sources */,
+				ACBB54C82B98F3EC00774132 /* Frameworks */,
+				ACBB54C92B98F3EC00774132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBB54CD2B98F3EC00774132 /* PBXTargetDependency */,
+			);
+			name = zaliczenie_bryndalUITests;
+			productName = zaliczenie_bryndalUITests;
+			productReference = ACBB54CB2B98F3EC00774132 /* zaliczenie_bryndalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBB54A92B98F3EB00774132 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					ACBB54B02B98F3EB00774132 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					ACBB54C02B98F3EC00774132 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = ACBB54B02B98F3EB00774132;
+					};
+					ACBB54CA2B98F3EC00774132 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = ACBB54B02B98F3EB00774132;
+					};
+				};
+			};
+			buildConfigurationList = ACBB54AC2B98F3EB00774132 /* Build configuration list for PBXProject "zaliczenie_bryndal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACBB54A82B98F3EB00774132;
+			productRefGroup = ACBB54B22B98F3EB00774132 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBB54B02B98F3EB00774132 /* zaliczenie_bryndal */,
+				ACBB54C02B98F3EC00774132 /* zaliczenie_bryndalTests */,
+				ACBB54CA2B98F3EC00774132 /* zaliczenie_bryndalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBB54AF2B98F3EB00774132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB54BC2B98F3EC00774132 /* Preview Assets.xcassets in Resources */,
+				AC8DB55E2B991DF00061FE3A /* Vector.svg in Resources */,
+				ACBB54B92B98F3EC00774132 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB54BF2B98F3EC00774132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB54C92B98F3EC00774132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBB54AD2B98F3EB00774132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8DB5542B990D450061FE3A /* HeaderView.swift in Sources */,
+				AC8DB5622B9923170061FE3A /* PasswordView.swift in Sources */,
+				ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */,
+				AC8DB5522B990D370061FE3A /* LoginView.swift in Sources */,
+				AC8DB5672B9924800061FE3A /* LoginButtonView.swift in Sources */,
+				AC8DB5572B990D960061FE3A /* TextWithSubtitle.swift in Sources */,
+				AC8DB5642B9924060061FE3A /* EmailView.swift in Sources */,
+				AC8DB55C2B9910420061FE3A /* LoginView.ViewModel.swift in Sources */,
+				ACBB54B52B98F3EB00774132 /* zaliczenie_bryndalApp.swift in Sources */,
+				ACA0D3682B99A8A300A61572 /* ResizeImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB54BD2B98F3EC00774132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB54C62B98F3EC00774132 /* zaliczenie_bryndalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB54C72B98F3EC00774132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB54D02B98F3EC00774132 /* zaliczenie_bryndalUITests.swift in Sources */,
+				ACBB54D22B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBB54C32B98F3EC00774132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBB54B02B98F3EB00774132 /* zaliczenie_bryndal */;
+			targetProxy = ACBB54C22B98F3EC00774132 /* PBXContainerItemProxy */;
+		};
+		ACBB54CD2B98F3EC00774132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBB54B02B98F3EB00774132 /* zaliczenie_bryndal */;
+			targetProxy = ACBB54CC2B98F3EC00774132 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ACBB54D32B98F3EC00774132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACBB54D42B98F3EC00774132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACBB54D62B98F3EC00774132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"zaliczenie_bryndal/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.doktorek.zaliczenie-bryndal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACBB54D72B98F3EC00774132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"zaliczenie_bryndal/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.doktorek.zaliczenie-bryndal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACBB54D92B98F3EC00774132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.doktorek.zaliczenie-bryndalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zaliczenie_bryndal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zaliczenie_bryndal";
+			};
+			name = Debug;
+		};
+		ACBB54DA2B98F3EC00774132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.doktorek.zaliczenie-bryndalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zaliczenie_bryndal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zaliczenie_bryndal";
+			};
+			name = Release;
+		};
+		ACBB54DC2B98F3EC00774132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.doktorek.zaliczenie-bryndalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zaliczenie_bryndal;
+			};
+			name = Debug;
+		};
+		ACBB54DD2B98F3EC00774132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.doktorek.zaliczenie-bryndalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zaliczenie_bryndal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBB54AC2B98F3EB00774132 /* Build configuration list for PBXProject "zaliczenie_bryndal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBB54D32B98F3EC00774132 /* Debug */,
+				ACBB54D42B98F3EC00774132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBB54D52B98F3EC00774132 /* Build configuration list for PBXNativeTarget "zaliczenie_bryndal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBB54D62B98F3EC00774132 /* Debug */,
+				ACBB54D72B98F3EC00774132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBB54D82B98F3EC00774132 /* Build configuration list for PBXNativeTarget "zaliczenie_bryndalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBB54D92B98F3EC00774132 /* Debug */,
+				ACBB54DA2B98F3EC00774132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBB54DB2B98F3EC00774132 /* Build configuration list for PBXNativeTarget "zaliczenie_bryndalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBB54DC2B98F3EC00774132 /* Debug */,
+				ACBB54DD2B98F3EC00774132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACBB54A92B98F3EB00774132 /* Project object */;
+}
