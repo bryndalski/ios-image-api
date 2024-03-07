@@ -13,7 +13,11 @@ class LoginViewModel:ObservableObject {
     
     init(){}
     
-    func validate(){}
+    func validate(){
+        
+        
+        
+    }
     
     func submit(){}
 }

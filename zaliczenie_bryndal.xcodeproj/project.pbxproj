@@ -16,6 +16,7 @@
 		AC8DB5642B9924060061FE3A /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5632B9924060061FE3A /* EmailView.swift */; };
 		AC8DB5672B9924800061FE3A /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5662B9924800061FE3A /* LoginButtonView.swift */; };
 		ACA0D3682B99A8A300A61572 /* ResizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA0D3672B99A8A300A61572 /* ResizeImage.swift */; };
+		ACA0D36A2B99E3A100A61572 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA0D3692B99E3A100A61572 /* MainView.swift */; };
 		ACBB54B52B98F3EB00774132 /* zaliczenie_bryndalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */; };
 		ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B62B98F3EB00774132 /* ContentView.swift */; };
 		ACBB54B92B98F3EC00774132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB54B82B98F3EC00774132 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		AC8DB5632B9924060061FE3A /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
 		AC8DB5662B9924800061FE3A /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		ACA0D3672B99A8A300A61572 /* ResizeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeImage.swift; sourceTree = "<group>"; };
+		ACA0D3692B99E3A100A61572 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ACBB54B12B98F3EB00774132 /* zaliczenie_bryndal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zaliczenie_bryndal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalApp.swift; sourceTree = "<group>"; };
 		ACBB54B62B98F3EB00774132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				AC8DB54D2B990D020061FE3A /* Components */,
 				AC8DB5512B990D370061FE3A /* LoginView.swift */,
+				ACA0D3692B99E3A100A61572 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				AC8DB5672B9924800061FE3A /* LoginButtonView.swift in Sources */,
 				AC8DB5572B990D960061FE3A /* TextWithSubtitle.swift in Sources */,
 				AC8DB5642B9924060061FE3A /* EmailView.swift in Sources */,
+				ACA0D36A2B99E3A100A61572 /* MainView.swift in Sources */,
 				AC8DB55C2B9910420061FE3A /* LoginView.ViewModel.swift in Sources */,
 				ACBB54B52B98F3EB00774132 /* zaliczenie_bryndalApp.swift in Sources */,
 				ACA0D3682B99A8A300A61572 /* ResizeImage.swift in Sources */,

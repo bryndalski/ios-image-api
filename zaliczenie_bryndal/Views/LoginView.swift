@@ -10,52 +10,78 @@ import SwiftUI
 struct LoginView: View {
     
     @StateObject var loginViewModel =  LoginViewModel()
+    @Environment(\.verticalSizeClass) var sizeClass
+
+    let textFieldSWithSubtitle = TextWithSubtitle(title: "Login", subtitle: "Please login to view your images")
+
+    
     
     var body: some View {
         
-
-        
-      
-        
-        
         VStack(alignment: .center){
-            TextWithSubtitle(title: "Login", subtitle: "Please login to view your images").frame(width: UIScreen.main.bounds.width-50,alignment: .leadingLastTextBaseline).padding(.top,200)
+            if UIDevice.current.orientation.isPortrait {
+                // Handle portrait orientation
+                textFieldSWithSubtitle.frame(width: UIScreen.main.bounds.width - 50).padding(.top,250)
+            } else {
+                // Handle landscape orientation
+                textFieldSWithSubtitle.frame(alignment: .leadingLastTextBaseline).padding(.top,30)
+            }
             
-            
+            VStack{
                 Form{
-                    //Fields
+
                     EmailView(email: $loginViewModel.email)
                     PasswordView(password: $loginViewModel.password)
                         .disableAutocorrection(true)
-
-                    
-                    LoginButtonView(
-                    text: "log in"
-                    ).padding(.top,20).contentMargins(0).offset(x:12)
-                    
-                }.scrollContentBackground(.hidden)
+                }.frame(maxWidth: 450)
+                .scrollContentBackground(.hidden)
                 .background(Color(UIColor.systemBackground))
                 .persistentSystemOverlays(.hidden)
-            
+                .scrollDisabled(true)
+                
+                LoginButtonView(
+                text: "log in",
+                onClick: {
+                    MainView() .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .transition(.move(edge: .leading))
+                }
+                ).offset(x:-10)
+                
+                
+            }.frame(
+                maxWidth: 450,
+                maxHeight:200
+            )
             
             
             Button(action: {
-                print("hhhh")
+                Alert(title: Text("Button not implemented"))
             }, label: {
 
-                Text("Forgot password ?").fontWeight(.regular)                .foregroundColor(.blue)
-            }).frame(maxWidth: .infinity, alignment: .center)
+                Text("Forgot password ?").fontWeight(.regular)                .foregroundColor(.blue).padding(.top,20)
+            })
             
             Spacer()
+ 
+            if UIDevice.current.orientation.isPortrait {
+                Image(uiImage: UIImage(named: "LoginWave")!.resize(Int(UIScreen.main.bounds.width), Int(UIScreen.main.bounds.width))).frame(
+                                maxHeight: 50
+                        )
+            }
             
-            Image(uiImage: UIImage(named: "LoginWave")!.resize(Int(UIScreen.main.bounds.width), Int(UIScreen.main.bounds.width)))
-        }.ignoresSafeArea(.all).overlay(
-            Image(uiImage: UIImage(named: "LoginBlob")!.resize(90,60)).position(
-                x:150,y:50
-            ).zIndex(3)
-    
-        )
 
+            
+            
+        }.ignoresSafeArea(.all).frame(maxWidth: 400)
+            
+            .overlay(
+                Image(uiImage: UIImage(named: "LoginBlob")!.resize(90,60)).position(
+                    x:0,y:90
+                ).zIndex(3).frame(maxHeight: 50)
+            )
+
+          
+        
             
     }
 }
