@@ -11,7 +11,6 @@
 		AC8DB5542B990D450061FE3A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5532B990D450061FE3A /* HeaderView.swift */; };
 		AC8DB5572B990D960061FE3A /* TextWithSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5562B990D960061FE3A /* TextWithSubtitle.swift */; };
 		AC8DB55C2B9910420061FE3A /* LoginView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */; };
-		AC8DB55E2B991DF00061FE3A /* Vector.svg in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB55D2B991DF00061FE3A /* Vector.svg */; };
 		AC8DB5622B9923170061FE3A /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5612B9923170061FE3A /* PasswordView.swift */; };
 		AC8DB5642B9924060061FE3A /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5632B9924060061FE3A /* EmailView.swift */; };
 		AC8DB5672B9924800061FE3A /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5662B9924800061FE3A /* LoginButtonView.swift */; };
@@ -48,7 +47,6 @@
 		AC8DB5532B990D450061FE3A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AC8DB5562B990D960061FE3A /* TextWithSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithSubtitle.swift; sourceTree = "<group>"; };
 		AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.ViewModel.swift; sourceTree = "<group>"; };
-		AC8DB55D2B991DF00061FE3A /* Vector.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vector.svg; path = ../../../../../Downloads/Vector.svg; sourceTree = "<group>"; };
 		AC8DB5612B9923170061FE3A /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		AC8DB5632B9924060061FE3A /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
 		AC8DB5662B9924800061FE3A /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */,
 				ACBB54B62B98F3EB00774132 /* ContentView.swift */,
 				ACBB54B82B98F3EC00774132 /* Assets.xcassets */,
-				AC8DB55D2B991DF00061FE3A /* Vector.svg */,
 				ACBB54BA2B98F3EC00774132 /* Preview Content */,
 			);
 			path = zaliczenie_bryndal;
@@ -310,7 +307,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBB54BC2B98F3EC00774132 /* Preview Assets.xcassets in Resources */,
-				AC8DB55E2B991DF00061FE3A /* Vector.svg in Resources */,
 				ACBB54B92B98F3EC00774132 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

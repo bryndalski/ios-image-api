@@ -108,3 +108,9 @@ DerivedData/
 .idea
 
 
+
+amplifyconfiguration.json
+awsconfiguration.json
+amplify
+.vscode
+.idea
