@@ -9,7 +9,30 @@ import SwiftUI
 
 struct LovedImagesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            ImageCardView(
+                imageSource: "https://picsum.photos/id/12/600",
+                imageName: "Beautiful Sunset",
+                imageId: "12345",
+                imageDate: "March 7, 2024",
+                isLoved: true
+            )
+            ImageCardView(
+                imageSource: "https://picsum.photos/id/12/600",
+                imageName: "Beautiful Sunset",
+                imageId: "12345",
+                imageDate: "March 7, 2024",
+                isLoved: true
+            )
+            ImageCardView(
+                imageSource: "https://picsum.photos/id/12/600",
+                imageName: "Beautiful Sunset",
+                imageId: "12345",
+                imageDate: "March 7, 2024",
+                isLoved: true
+            )
+        }
+       
     }
 }
 

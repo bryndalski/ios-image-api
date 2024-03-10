@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var cognitoModel =  MainViewModel()
+
+    
+    
     var body: some View {
-        VStack {
-           LoginView()
+            VStack {
+                if cognitoModel.isLoading{
+                    ProgressView()
+                }else {
+                    if cognitoModel.isLoggedIn {
+                        NavigationView(loginManager:cognitoModel)
+                    } else {
+                        LoginView(loginManager: cognitoModel)
+                    }
+                }
+            }
         }
-     
-    }
 }
 
 #Preview {

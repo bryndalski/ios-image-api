@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct NavigationView: View {
+    @ObservedObject var loginManager : MainViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            LovedImagesView()
+                .tabItem {
+                    Label("Loved",
+                          systemImage: "heart")
+                }
+            
+           HomeView()
+                .tabItem {
+                    Label("Home",
+                          systemImage: "photo.fill")
+                }
+            
+            ProfileView(loginManager: loginManager)
+                .tabItem {
+                    Label("Profile",
+                          systemImage: "person")
+                }
+        }
     }
 }
 
-#Preview {
-    NavigationView()
-}
+//#Preview {
+//    NavigationView()
+//}

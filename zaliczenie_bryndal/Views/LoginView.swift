@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    
+    @ObservedObject var loginManager : MainViewModel
     @StateObject var loginViewModel =  LoginViewModel()
     @Environment(\.verticalSizeClass) var sizeClass
 
@@ -42,10 +42,15 @@ struct LoginView: View {
                 LoginButtonView(
                 text: "log in",
                 onClick: {
-                    MainView() .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .transition(.move(edge: .leading))
+                    Task {
+                        if await loginViewModel.signIn() {
+                            loginManager.setSignedIn()
+                        }
+                    }
                 }
-                ).offset(x:-10)
+                ).offset(x:-10) .alert("Invalid credentials", isPresented: $loginViewModel.invlalidCredentials) {
+                    Button("OK", role: .cancel) { }
+                }
                 
                 
             }.frame(
@@ -68,10 +73,6 @@ struct LoginView: View {
                                 maxHeight: 50
                         )
             }
-            
-
-            
-            
         }.ignoresSafeArea(.all).frame(maxWidth: 400)
             
             .overlay(
@@ -84,8 +85,4 @@ struct LoginView: View {
         
             
     }
-}
-
-#Preview {
-    LoginView()
 }

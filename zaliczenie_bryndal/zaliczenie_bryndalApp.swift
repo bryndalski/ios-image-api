@@ -5,7 +5,10 @@
 //  Created by Jakub Bryndal on 06/03/2024.
 //
 
+
+
 import SwiftUI
+
 
 @main
 struct zaliczenie_bryndalApp: App {
@@ -13,5 +16,10 @@ struct zaliczenie_bryndalApp: App {
         WindowGroup {
             ContentView()
         }
+       
     }
+
 }
+
+
+

@@ -18,15 +18,15 @@ struct PasswordView: View {
             )
 
             if isPasswordShown {
-                SecureField("Password", text: $password).autocapitalization(.none)
-            } else {
                 TextField("Password", text: $password).autocapitalization(.none)
+            } else {
+                SecureField("Password", text: $password).autocapitalization(.none)
             }
 
             Button(action: {
                 isPasswordShown.toggle()
             }, label: {
-                Image(systemName: isPasswordShown ? "eye.fill" : "eye.slash.fill").foregroundColor(.gray)
+                Image(systemName: isPasswordShown ? "eye.slash.fill" : "eye.fill").foregroundColor(.gray)
             })
         }
     }
