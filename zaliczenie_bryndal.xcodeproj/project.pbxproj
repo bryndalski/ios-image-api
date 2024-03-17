@@ -33,6 +33,7 @@
 		ACA8E3DF2B9CC585002A4297 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3DE2B9CC585002A4297 /* MainViewModel.swift */; };
 		ACA8E3E32B9CEF4A002A4297 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3E22B9CEF4A002A4297 /* ProfileViewModel.swift */; };
 		ACA8E3E62B9DBE86002A4297 /* CognitoUser.protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3E52B9DBE86002A4297 /* CognitoUser.protocol.swift */; };
+		ACA8E3EB2B9DFB8E002A4297 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */; };
 		ACBB54B52B98F3EB00774132 /* zaliczenie_bryndalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */; };
 		ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B62B98F3EB00774132 /* ContentView.swift */; };
 		ACBB54B92B98F3EC00774132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB54B82B98F3EC00774132 /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		ACA8E3DE2B9CC585002A4297 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		ACA8E3E22B9CEF4A002A4297 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		ACA8E3E52B9DBE86002A4297 /* CognitoUser.protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoUser.protocol.swift; sourceTree = "<group>"; };
+		ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		ACBB54B12B98F3EB00774132 /* zaliczenie_bryndal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zaliczenie_bryndal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalApp.swift; sourceTree = "<group>"; };
 		ACBB54B62B98F3EB00774132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,6 +212,14 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		ACA8E3E92B9DFB83002A4297 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
 		ACBB54A82B98F3EB00774132 = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +244,7 @@
 		ACBB54B32B98F3EB00774132 /* zaliczenie_bryndal */ = {
 			isa = PBXGroup;
 			children = (
+				ACA8E3E92B9DFB83002A4297 /* networking */,
 				ACA8E3C52B9C719A002A4297 /* zaliczenie-bryndal-Info.plist */,
 				ACA0D3662B99A89500A61572 /* extentions */,
 				AC8DB55A2B9910250061FE3A /* ViewModels */,
@@ -418,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA8E3EB2B9DFB8E002A4297 /* Networking.swift in Sources */,
 				AC8DB5542B990D450061FE3A /* HeaderView.swift in Sources */,
 				AC8DB5622B9923170061FE3A /* PasswordView.swift in Sources */,
 				ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */,

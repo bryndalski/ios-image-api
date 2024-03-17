@@ -65,8 +65,8 @@ class MainViewModel: ObservableObject{
                        break
                }
            }
-
-           await MainActor.run{
+           
+            await MainActor.run{
                isLoggedIn = session.isSignedIn
            }
        } catch {
