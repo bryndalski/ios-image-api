@@ -8,11 +8,40 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var imageViewModel = ImageViewModel()
+    @State private var isLoading = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if isLoading {
+                ProgressView()
+            } else if !imageViewModel.images.isEmpty {
+                ScrollView {
+                    LazyVStack {
+                        ForEach(imageViewModel.images, id: \.imageId) { imageCardView in
+                            imageCardView
+                                .padding()
+                        }
+                    }
+                }
+            } else {
+                Text("No images")
+                    .font(.title)
+                    .foregroundColor(.gray)
+            }
+        }
+        .onAppear {
+            Task {
+                isLoading = true
+                await imageViewModel.fetchImages()
+                isLoading = false
+            }
+        }
     }
 }
 
-#Preview {
-    HomeView()
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
 }

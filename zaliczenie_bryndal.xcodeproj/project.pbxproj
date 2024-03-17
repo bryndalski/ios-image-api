@@ -18,6 +18,11 @@
 		AC8DB5672B9924800061FE3A /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5662B9924800061FE3A /* LoginButtonView.swift */; };
 		ACA0D3682B99A8A300A61572 /* ResizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA0D3672B99A8A300A61572 /* ResizeImage.swift */; };
 		ACA0D36F2B9A028C00A61572 /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA0D36E2B9A028C00A61572 /* ImageCardView.swift */; };
+		ACA156212BA74B81001958D4 /* BrowserImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA156202BA74B81001958D4 /* BrowserImages.swift */; };
+		ACA156242BA77C4B001958D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB54BB2B98F3EC00774132 /* Preview Assets.xcassets */; };
+		ACA156262BA7810A001958D4 /* BrowserInagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA156252BA7810A001958D4 /* BrowserInagesViewModel.swift */; };
+		ACA1562A2BA795BE001958D4 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA156292BA795BE001958D4 /* ImageViewModel.swift */; };
+		ACA1562D2BA79B24001958D4 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1562C2BA79B24001958D4 /* DateFormatter.swift */; };
 		ACA8E3C72B9C736B002A4297 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = ACA8E3C62B9C736B002A4297 /* AWSAPIPlugin */; };
 		ACA8E3C92B9C736B002A4297 /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = ACA8E3C82B9C736B002A4297 /* AWSPluginsCore */; };
 		ACA8E3CB2B9C736B002A4297 /* AWSPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = ACA8E3CA2B9C736B002A4297 /* AWSPredictionsPlugin */; };
@@ -26,18 +31,15 @@
 		ACA8E3D12B9C736B002A4297 /* CoreMLPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = ACA8E3D02B9C736B002A4297 /* CoreMLPredictionsPlugin */; };
 		ACA8E3D32B9C73AD002A4297 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = ACA8E3D22B9C73AD002A4297 /* AWSCognitoAuthPlugin */; };
 		ACA8E3D52B9C7605002A4297 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = ACA8E3D42B9C7605002A4297 /* Amplify */; };
-		ACA8E3D72B9C95F8002A4297 /* LovedImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3D62B9C95F8002A4297 /* LovedImagesView.swift */; };
 		ACA8E3D92B9C96A3002A4297 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3D82B9C96A3002A4297 /* NavigationView.swift */; };
 		ACA8E3DB2B9C9730002A4297 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3DA2B9C9730002A4297 /* HomeView.swift */; };
 		ACA8E3DD2B9C974D002A4297 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3DC2B9C974D002A4297 /* ProfileView.swift */; };
 		ACA8E3DF2B9CC585002A4297 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3DE2B9CC585002A4297 /* MainViewModel.swift */; };
-		ACA8E3E32B9CEF4A002A4297 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3E22B9CEF4A002A4297 /* ProfileViewModel.swift */; };
 		ACA8E3E62B9DBE86002A4297 /* CognitoUser.protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3E52B9DBE86002A4297 /* CognitoUser.protocol.swift */; };
 		ACA8E3EB2B9DFB8E002A4297 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */; };
 		ACBB54B52B98F3EB00774132 /* zaliczenie_bryndalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */; };
 		ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B62B98F3EB00774132 /* ContentView.swift */; };
 		ACBB54B92B98F3EC00774132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB54B82B98F3EC00774132 /* Assets.xcassets */; };
-		ACBB54BC2B98F3EC00774132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB54BB2B98F3EC00774132 /* Preview Assets.xcassets */; };
 		ACBB54C62B98F3EC00774132 /* zaliczenie_bryndalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54C52B98F3EC00774132 /* zaliczenie_bryndalTests.swift */; };
 		ACBB54D02B98F3EC00774132 /* zaliczenie_bryndalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54CF2B98F3EC00774132 /* zaliczenie_bryndalUITests.swift */; };
 		ACBB54D22B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54D12B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift */; };
@@ -70,13 +72,15 @@
 		AC8DB5662B9924800061FE3A /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		ACA0D3672B99A8A300A61572 /* ResizeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeImage.swift; sourceTree = "<group>"; };
 		ACA0D36E2B9A028C00A61572 /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
+		ACA156202BA74B81001958D4 /* BrowserImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserImages.swift; sourceTree = "<group>"; };
+		ACA156252BA7810A001958D4 /* BrowserInagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserInagesViewModel.swift; sourceTree = "<group>"; };
+		ACA156292BA795BE001958D4 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		ACA1562C2BA79B24001958D4 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		ACA8E3C52B9C719A002A4297 /* zaliczenie-bryndal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "zaliczenie-bryndal-Info.plist"; sourceTree = SOURCE_ROOT; };
-		ACA8E3D62B9C95F8002A4297 /* LovedImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovedImagesView.swift; sourceTree = "<group>"; };
 		ACA8E3D82B9C96A3002A4297 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		ACA8E3DA2B9C9730002A4297 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ACA8E3DC2B9C974D002A4297 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ACA8E3DE2B9CC585002A4297 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		ACA8E3E22B9CEF4A002A4297 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		ACA8E3E52B9DBE86002A4297 /* CognitoUser.protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoUser.protocol.swift; sourceTree = "<group>"; };
 		ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		ACBB54B12B98F3EB00774132 /* zaliczenie_bryndal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zaliczenie_bryndal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,9 +144,9 @@
 			children = (
 				AC8DB54D2B990D020061FE3A /* Components */,
 				AC8DB5512B990D370061FE3A /* LoginView.swift */,
-				ACA8E3D62B9C95F8002A4297 /* LovedImagesView.swift */,
 				ACA8E3DA2B9C9730002A4297 /* HomeView.swift */,
 				ACA8E3DC2B9C974D002A4297 /* ProfileView.swift */,
+				ACA156202BA74B81001958D4 /* BrowserImages.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,7 +179,8 @@
 				ACA8E3E42B9DBE71002A4297 /* protocols */,
 				AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */,
 				ACA8E3DE2B9CC585002A4297 /* MainViewModel.swift */,
-				ACA8E3E22B9CEF4A002A4297 /* ProfileViewModel.swift */,
+				ACA156252BA7810A001958D4 /* BrowserInagesViewModel.swift */,
+				ACA156292BA795BE001958D4 /* ImageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA0D3672B99A8A300A61572 /* ResizeImage.swift */,
+				ACA1562C2BA79B24001958D4 /* DateFormatter.swift */,
 			);
 			path = extentions;
 			sourceTree = "<group>";
@@ -202,6 +208,13 @@
 				ACA0D36E2B9A028C00A61572 /* ImageCardView.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		ACA1562B2BA79758001958D4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		ACA8E3E42B9DBE71002A4297 /* protocols */ = {
@@ -215,6 +228,7 @@
 		ACA8E3E92B9DFB83002A4297 /* networking */ = {
 			isa = PBXGroup;
 			children = (
+				ACA1562B2BA79758001958D4 /* New Group */,
 				ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */,
 			);
 			path = networking;
@@ -401,7 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACBB54BC2B98F3EC00774132 /* Preview Assets.xcassets in Resources */,
+				ACA156242BA77C4B001958D4 /* Preview Assets.xcassets in Resources */,
 				ACBB54B92B98F3EC00774132 /* Assets.xcassets in Resources */,
 				4C37B228E969E81A692079C2 /* awsconfiguration.json in Resources */,
 				A2A11C2B7271B47EF0AFF4C8 /* amplifyconfiguration.json in Resources */,
@@ -432,9 +446,11 @@
 				ACA8E3EB2B9DFB8E002A4297 /* Networking.swift in Sources */,
 				AC8DB5542B990D450061FE3A /* HeaderView.swift in Sources */,
 				AC8DB5622B9923170061FE3A /* PasswordView.swift in Sources */,
+				ACA1562D2BA79B24001958D4 /* DateFormatter.swift in Sources */,
 				ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */,
 				ACA8E3DB2B9C9730002A4297 /* HomeView.swift in Sources */,
 				AC8DB5522B990D370061FE3A /* LoginView.swift in Sources */,
+				ACA1562A2BA795BE001958D4 /* ImageViewModel.swift in Sources */,
 				AC8DB5672B9924800061FE3A /* LoginButtonView.swift in Sources */,
 				AC8DB5572B990D960061FE3A /* TextWithSubtitle.swift in Sources */,
 				ACA0D36F2B9A028C00A61572 /* ImageCardView.swift in Sources */,
@@ -444,9 +460,9 @@
 				ACA8E3D92B9C96A3002A4297 /* NavigationView.swift in Sources */,
 				AC8DB5642B9924060061FE3A /* EmailView.swift in Sources */,
 				AC8DB55C2B9910420061FE3A /* LoginView.ViewModel.swift in Sources */,
-				ACA8E3E32B9CEF4A002A4297 /* ProfileViewModel.swift in Sources */,
-				ACA8E3D72B9C95F8002A4297 /* LovedImagesView.swift in Sources */,
+				ACA156212BA74B81001958D4 /* BrowserImages.swift in Sources */,
 				ACBB54B52B98F3EB00774132 /* zaliczenie_bryndalApp.swift in Sources */,
+				ACA156262BA7810A001958D4 /* BrowserInagesViewModel.swift in Sources */,
 				ACA0D3682B99A8A300A61572 /* ResizeImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

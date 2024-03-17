@@ -12,11 +12,6 @@ struct NavigationView: View {
     
     var body: some View {
         TabView {
-            LovedImagesView()
-                .tabItem {
-                    Label("Loved",
-                          systemImage: "heart")
-                }
             
            HomeView()
                 .tabItem {
@@ -24,11 +19,21 @@ struct NavigationView: View {
                           systemImage: "photo.fill")
                 }
             
+            
+           BrowserImages()
+                .tabItem {
+                    Label("add new",
+                          systemImage: "photo.badge.plus.fill")
+                }
+            
+           
+            
             ProfileView(loginManager: loginManager)
                 .tabItem {
                     Label("Profile",
                           systemImage: "person")
-                }
+                }     
+            
         }
     }
 }

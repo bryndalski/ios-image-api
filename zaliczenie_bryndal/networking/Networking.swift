@@ -1,8 +1,54 @@
 import Foundation
 import Amplify
 import AWSPluginsCore
+import Foundation
 
 class Networking {
+    
+
+    static func PostImage(url: String, imageData: Data) async {
+        let idToken = await getIdToken()
+        let boundary = UUID().uuidString
+        var request = URLRequest(url: URL(string: url)!)
+        request.httpMethod = "POST"
+        
+        // Set the Content-Type header to multipart/form-data
+        request.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+        
+        // Add Authorization header
+        request.setValue("Bearer \(idToken)", forHTTPHeaderField: "Authorization")
+        
+        // Set the image data as the request body
+        var body = Data()
+        body.append("--\(boundary)\r\n".data(using: .utf8)!)
+        body.append("Content-Disposition: form-data; name=\"file\"; filename=\"image.jpg\"\r\n".data(using: .utf8)!)
+        body.append("Content-Type: image/jpeg\r\n\r\n".data(using: .utf8)!)
+        body.append(imageData)
+        body.append("\r\n".data(using: .utf8)!)
+        body.append("--\(boundary)--\r\n".data(using: .utf8)!)
+        
+        request.httpBody = body
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error: \(error)")
+                return
+            }
+            
+            // Handle the response here
+            if let httpResponse = response as? HTTPURLResponse {
+                print("Response status code: \(httpResponse.statusCode)")
+                // Handle success or failure based on status code
+            }
+            
+            if let data = data {
+                // Parse response data if needed
+            }
+        }.resume()
+    }
+
+
+
 
     static func Post(url: String) async {
         let idToken = await getIdToken()
