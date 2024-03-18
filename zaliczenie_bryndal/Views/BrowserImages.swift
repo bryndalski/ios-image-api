@@ -5,10 +5,9 @@ struct BrowserImages: View {
     @State private var image: UIImage?
     @State private var showingImagePicker = false
     @State private var isLoadingImage = false
+    @State private var showAlert = false
+    @State private var alertMessage = ""
     @StateObject private var viewModel = BrowserInagesViewModel()
-
-    
- 
 
     var body: some View {
         VStack {
@@ -24,26 +23,37 @@ struct BrowserImages: View {
                 self.showingImagePicker = true
             }
             
-            Button(isLoadingImage ? "Send Image": "Sending image...") {
-//            if(isLoadingImage){ return}
-              if let image = self.image {
-                  isLoadingImage.toggle()
-                  Task {
-                     await viewModel.sendImageToAPI(image)
-                     await MainActor.run {
-                         isLoadingImage.toggle()
-                      }
-                  }
-              } else {
-                  print("No image selected.")
-              }
-          }
+            Button(action: {
+                if let image = self.image {
+                    isLoadingImage.toggle()
+                    Task {
+                        await viewModel.sendImageToAPI(image)
+                        await MainActor.run {
+                            isLoadingImage.toggle()
+                            showAlert = true
+                            alertMessage = "Image uploaded successfully!"
+                        }
+                    }
+                } else {
+                    print("No image selected.")
+                }
+            }) {
+                if isLoadingImage {
+                    Text("Sending image...")
+                } else {
+                    Text("Send Image")
+                }
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Success"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+            }
         }
         .sheet(isPresented: $showingImagePicker) {
             ImagePicker(image: $image)
         }
     }
 }
+
 
 struct ImagePicker: UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode

@@ -13,36 +13,39 @@ struct ImageCardView: View {
     let imageId: String
     let imageDate: String
     let isLoved: Bool
+    let destination: Destination
+
     
     var body: some View {
-        VStack(alignment: .leading,spacing: 16){
-            //Card header
-            AsyncImage(
-               url:  URL(string: "https://picsum.photos/200/200"),
-               content: { image in
-                   image.resizable()
-                       .frame(width: 350,height: 240)
-                        .overlay(
-                              alignment: .topLeading
-                          ) {
-                              HStack {
-                                  Spacer()
-                                  Image(systemName: isLoved ? "heart.fill" : "heart" ).foregroundColor(.red)
-                              }.frame(alignment: .leading).frame(width: 310).padding(20)
-                          }
-               },
-               placeholder: {
-                   HStack(alignment:.center){
-                       ProgressView()
-                   }
-               })
-            cardText
-        }
+        NavigationLink(destination: destination) {
+            VStack(alignment: .leading,spacing: 16){
+                //Card header
+                AsyncImage(
+                    url:  URL(string:imageSource),
+                    content: { image in
+                        image.resizable()
+                            .frame(width: 350,height: 240)
+                            .overlay(
+                                alignment: .topLeading
+                            ) {
+                                HStack {
+                                    Spacer()
+                                    Image(systemName: isLoved ? "heart.fill" : "heart" ).foregroundColor(.red)
+                                }.frame(alignment: .leading).frame(width: 310).padding(20)
+                            }
+                    },
+                    placeholder: {
+                        HStack(alignment:.center){
+                            ProgressView()
+                        }
+                    })
+                cardText
+            }
             .background(.white)
             .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
             .shadow(radius: 20)
             
-
+        }
     }
     
     var cardText: some View {

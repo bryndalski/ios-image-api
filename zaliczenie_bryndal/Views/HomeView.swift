@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var imageViewModel = ImageViewModel()
     @State private var isLoading = false
+    @State private var isRefreshing = false
+    @State private var offsetY: CGFloat = 0
 
     var body: some View {
         VStack {
@@ -24,6 +26,10 @@ struct HomeView: View {
                         }
                     }
                 }
+                .refreshable {
+                    await refreshImages()
+                }
+                .overlay(refreshControl)
             } else {
                 Text("No images")
                     .font(.title)
@@ -31,12 +37,29 @@ struct HomeView: View {
             }
         }
         .onAppear {
+            isLoading = true
             Task {
-                isLoading = true
                 await imageViewModel.fetchImages()
                 isLoading = false
             }
         }
+    }
+
+    private func refreshImages() async {
+        isRefreshing = true
+        await imageViewModel.fetchImages()
+        isRefreshing = false
+    }
+
+    private var refreshControl: some View {
+        GeometryReader { geometry in
+            if geometry.frame(in: .global).minY < -50 && !isRefreshing {
+                ProgressView()
+                    .offset(y: geometry.frame(in: .global).minY + 40)
+                    .padding(.bottom, -40)
+            }
+        }
+        .frame(height: 0)
     }
 }
 

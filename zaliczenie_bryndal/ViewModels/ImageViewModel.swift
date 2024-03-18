@@ -11,39 +11,44 @@ import Foundation
 class ImageViewModel: ObservableObject {
     @Published var images: [ImageCardView] = []
 
-    func fetchImages() {
-        Task {
-            do {
-                if let json = try await Networking.Get(url: "http://localhost:3000/api/images/getImages") {
-                    // Assuming your JSON response contains an array of images
-                    if let imageArray = json["images"] as? [[String: Any]] {
-                        let decodedImages = imageArray.compactMap { imageData -> ImageCardView? in
-                            if let imageUrl = imageData["imageUrl"] as? String,
-                               let imageId = imageData["id"] as? String,
-                               let isLoved = imageData["isLoved"] as? Bool,
-                               let createdAtString = imageData["createdAt"] as? String,
-                               let imageName = imageData["imageName"] as? String,
-
-                               let createdAt = DateFormatter.iso8601Full.date(from: createdAtString) {
-                                
-                                return ImageCardView(
-                                    imageSource: imageUrl,
-                                    imageName: imageName,
-                                    imageId: imageId,
-                                    imageDate: createdAtString,
-                                    isLoved: isLoved
-                                )
-                            }
+    func fetchImages() async {
+        do {
+            if let json = try await Networking.Get(url: "http://localhost:3000/api/images/getImages") {
+                if let imageArray = json["images"] as? [[String: Any]] {
+                    print(imageArray)
+                    let decodedImages = imageArray.compactMap { imageData -> ImageCardView? in
+                        guard let imageUrlString = imageData["imageUrl"] as? String,
+                              let imageId = imageData["id"] as? String,
+                              let isLoved = imageData["isLoved"] as? Bool,
+                              let createdAtString = imageData["createdAt"] as? String,
+                              let imageName = imageData["imageName"] as? String
+                        else {
+                            print("BUUU")
                             return nil
                         }
-                        DispatchQueue.main.async {
-                            self.images = decodedImages
-                        }
+                      
+                        return ImageCardView(
+                            imageSource: imageData["imageUrl"],
+                            imageName: imageName,
+                            imageId: imageId,
+                            imageDate: createdAtString,
+                            isLoved: isLoved
+                        )
                     }
+                    DispatchQueue.main.async {
+                        print(decodedImages)
+                        self.images = decodedImages
+                    }
+                } else {
+                    print("Images key not found in JSON response.")
                 }
-            } catch {
-                print("Error fetching images: \(error)")
+            } else {
+                print("Empty JSON response.")
             }
+        } catch {
+            print("Error fetching images: \(error)")
         }
     }
+
+
 }
