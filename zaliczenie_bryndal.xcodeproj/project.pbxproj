@@ -43,6 +43,7 @@
 		ACBB54C62B98F3EC00774132 /* zaliczenie_bryndalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54C52B98F3EC00774132 /* zaliczenie_bryndalTests.swift */; };
 		ACBB54D02B98F3EC00774132 /* zaliczenie_bryndalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54CF2B98F3EC00774132 /* zaliczenie_bryndalUITests.swift */; };
 		ACBB54D22B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54D12B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift */; };
+		ACD96FAD2BA8F185004ADB64 /* ImageDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD96FAC2BA8F185004ADB64 /* ImageDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		ACBB54CB2B98F3EC00774132 /* zaliczenie_bryndalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zaliczenie_bryndalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB54CF2B98F3EC00774132 /* zaliczenie_bryndalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalUITests.swift; sourceTree = "<group>"; };
 		ACBB54D12B98F3EC00774132 /* zaliczenie_bryndalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACD96FAC2BA8F185004ADB64 /* ImageDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsView.swift; sourceTree = "<group>"; };
 		C561F25145A404430146177D /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		E0A2610B0C1A7A1339B4D74B /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 				ACA8E3DA2B9C9730002A4297 /* HomeView.swift */,
 				ACA8E3DC2B9C974D002A4297 /* ProfileView.swift */,
 				ACA156202BA74B81001958D4 /* BrowserImages.swift */,
+				ACD96FAC2BA8F185004ADB64 /* ImageDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				ACA0D36F2B9A028C00A61572 /* ImageCardView.swift in Sources */,
 				ACA8E3DF2B9CC585002A4297 /* MainViewModel.swift in Sources */,
 				ACA8E3E62B9DBE86002A4297 /* CognitoUser.protocol.swift in Sources */,
+				ACD96FAD2BA8F185004ADB64 /* ImageDetailsView.swift in Sources */,
 				ACA8E3DD2B9C974D002A4297 /* ProfileView.swift in Sources */,
 				ACA8E3D92B9C96A3002A4297 /* NavigationView.swift in Sources */,
 				AC8DB5642B9924060061FE3A /* EmailView.swift in Sources */,

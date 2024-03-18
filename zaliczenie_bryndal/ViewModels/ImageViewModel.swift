@@ -8,31 +8,41 @@
 import Foundation
 
 
+struct ImageData: Identifiable {
+    let id: String
+    let imageUrl: String
+    let imageId: String
+    let isLoved: Bool
+    let createdAt: String
+    let imageName: String
+}
+
 class ImageViewModel: ObservableObject {
-    @Published var images: [ImageCardView] = []
+    @Published var images: [ImageData] = []
 
     func fetchImages() async {
         do {
             if let json = try await Networking.Get(url: "http://localhost:3000/api/images/getImages") {
                 if let imageArray = json["images"] as? [[String: Any]] {
                     print(imageArray)
-                    let decodedImages = imageArray.compactMap { imageData -> ImageCardView? in
+                    let decodedImages = imageArray.compactMap { imageData -> ImageData? in
                         guard let imageUrlString = imageData["imageUrl"] as? String,
                               let imageId = imageData["id"] as? String,
                               let isLoved = imageData["isLoved"] as? Bool,
                               let createdAtString = imageData["createdAt"] as? String,
+                              let id = imageData["id"] as? String,
                               let imageName = imageData["imageName"] as? String
                         else {
-                            print("BUUU")
                             return nil
                         }
                       
-                        return ImageCardView(
-                            imageSource: imageData["imageUrl"],
-                            imageName: imageName,
+                        return ImageData(
+                            id:id,
+                            imageUrl: imageUrlString,
                             imageId: imageId,
-                            imageDate: createdAtString,
-                            isLoved: isLoved
+                            isLoved: isLoved,
+                            createdAt: createdAtString,
+                            imageName: imageName
                         )
                     }
                     DispatchQueue.main.async {
@@ -43,7 +53,7 @@ class ImageViewModel: ObservableObject {
                     print("Images key not found in JSON response.")
                 }
             } else {
-                print("Empty JSON response.")
+                print("Empty JSON")
             }
         } catch {
             print("Error fetching images: \(error)")

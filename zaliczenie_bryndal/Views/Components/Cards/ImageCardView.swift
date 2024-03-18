@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ImageCardView: View {
+struct ImageCardView<Destination: View>: View {
     let imageSource:String
     let imageName: String
     let imageId: String
@@ -57,14 +57,4 @@ struct ImageCardView: View {
             }.padding(.bottom,15).foregroundColor(.gray)
         }.frame(width: 340, alignment: .topLeading).padding(.leading,10)
     }
-}
-
-#Preview {
-    ImageCardView(
-        imageSource: "htt...",
-        imageName: "Beautiful Sunset",
-        imageId: "12345",
-        imageDate: "March 7, 2024",
-        isLoved: true
-    )
 }

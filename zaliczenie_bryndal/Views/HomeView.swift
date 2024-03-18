@@ -11,36 +11,44 @@ struct HomeView: View {
     @StateObject var imageViewModel = ImageViewModel()
     @State private var isLoading = false
     @State private var isRefreshing = false
-    @State private var offsetY: CGFloat = 0
+//    @State private var offsetY: CGFloat = 0
 
     var body: some View {
-        VStack {
-            if isLoading {
-                ProgressView()
-            } else if !imageViewModel.images.isEmpty {
-                ScrollView {
-                    LazyVStack {
-                        ForEach(imageViewModel.images, id: \.imageId) { imageCardView in
-                            imageCardView
+        NavigationStack {
+            VStack {
+                if isLoading {
+                    ProgressView()
+                } else if !imageViewModel.images.isEmpty {
+                    ScrollView {
+                        LazyVStack {
+                            ForEach(imageViewModel.images, id: \.imageId) { imageData in
+                                ImageCardView(
+                                    imageSource: imageData.imageUrl, imageName: imageData.imageName, imageId: imageData.imageId, imageDate: imageData.imageName, isLoved:imageData.isLoved,
+                                    
+                                    destination: ImageDetailsView(
+                                        imageName: imageData.imageName, imageUrl: imageData.imageUrl
+                                    )
+                                )
                                 .padding()
+                            }
                         }
                     }
+                    .refreshable {
+                        await refreshImages()
+                    }
+                    .overlay(refreshControl)
+                } else {
+                    Text("No images")
+                        .font(.title)
+                        .foregroundColor(.gray)
                 }
-                .refreshable {
-                    await refreshImages()
-                }
-                .overlay(refreshControl)
-            } else {
-                Text("No images")
-                    .font(.title)
-                    .foregroundColor(.gray)
             }
-        }
-        .onAppear {
-            isLoading = true
-            Task {
-                await imageViewModel.fetchImages()
-                isLoading = false
+            .onAppear {
+                isLoading = true
+                Task {
+                    await imageViewModel.fetchImages()
+                    isLoading = false
+                }
             }
         }
     }
