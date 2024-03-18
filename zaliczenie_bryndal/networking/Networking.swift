@@ -11,14 +11,9 @@ class Networking {
         let boundary = UUID().uuidString
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "POST"
-        
-        // Set the Content-Type header to multipart/form-data
         request.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
-        
-        // Add Authorization header
         request.setValue("Bearer \(idToken)", forHTTPHeaderField: "Authorization")
         
-        // Set the image data as the request body
         var body = Data()
         body.append("--\(boundary)\r\n".data(using: .utf8)!)
         body.append("Content-Disposition: form-data; name=\"file\"; filename=\"image.jpg\"\r\n".data(using: .utf8)!)
@@ -34,32 +29,16 @@ class Networking {
                 print("Error: \(error)")
                 return
             }
-            
-            // Handle the response here
-            if let httpResponse = response as? HTTPURLResponse {
+                        if let httpResponse = response as? HTTPURLResponse {
                 print("Response status code: \(httpResponse.statusCode)")
-                // Handle success or failure based on status code
             }
             
             if let data = data {
-                // Parse response data if needed
             }
         }.resume()
     }
 
 
-
-
-    static func Post(url: String) async {
-        let idToken = await getIdToken()
-        var request = URLRequest(url: URL(string: url)!)
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.setValue("Bearer \(idToken)", forHTTPHeaderField: "Authorization")
-        
-        // TODO: Add your post request body and handle the response
-    }
     
     static func Get(url: String) async -> [String: Any]? {
         let idToken = await getIdToken()

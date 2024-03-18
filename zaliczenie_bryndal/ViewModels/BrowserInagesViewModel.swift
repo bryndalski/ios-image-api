@@ -14,12 +14,8 @@ class BrowserInagesViewModel: ObservableObject {
             print("Failed to convert image to data.")
             return
         }
-        
-        // URL of your API endpoint
-        let apiUrl = "http://localhost:3000/api/images/add"
-        
         // Call the Post method with the API URL and image data
-        await Networking.PostImage(url: apiUrl, imageData: imageData)
+        await Networking.PostImage(url: "http://localhost:3000/api/images/add", imageData: imageData)
     }
 }
 

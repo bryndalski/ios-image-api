@@ -63,7 +63,7 @@ struct LoginView: View {
                 Alert(title: Text("Button not implemented"))
             }, label: {
 
-                Text("Forgot password ?").fontWeight(.regular)                .foregroundColor(.blue).padding(.top,20)
+                Text("Forgot password ?").fontWeight(.regular)                .foregroundColor(.blue).padding(.top,20).disabled(true)
             })
             
             Spacer()

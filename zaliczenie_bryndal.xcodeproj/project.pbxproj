@@ -10,7 +10,6 @@
 		4C37B228E969E81A692079C2 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C561F25145A404430146177D /* awsconfiguration.json */; };
 		A2A11C2B7271B47EF0AFF4C8 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E0A2610B0C1A7A1339B4D74B /* amplifyconfiguration.json */; };
 		AC8DB5522B990D370061FE3A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5512B990D370061FE3A /* LoginView.swift */; };
-		AC8DB5542B990D450061FE3A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5532B990D450061FE3A /* HeaderView.swift */; };
 		AC8DB5572B990D960061FE3A /* TextWithSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5562B990D960061FE3A /* TextWithSubtitle.swift */; };
 		AC8DB55C2B9910420061FE3A /* LoginView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */; };
 		AC8DB5622B9923170061FE3A /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB5612B9923170061FE3A /* PasswordView.swift */; };
@@ -35,7 +34,6 @@
 		ACA8E3DB2B9C9730002A4297 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3DA2B9C9730002A4297 /* HomeView.swift */; };
 		ACA8E3DD2B9C974D002A4297 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3DC2B9C974D002A4297 /* ProfileView.swift */; };
 		ACA8E3DF2B9CC585002A4297 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3DE2B9CC585002A4297 /* MainViewModel.swift */; };
-		ACA8E3E62B9DBE86002A4297 /* CognitoUser.protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3E52B9DBE86002A4297 /* CognitoUser.protocol.swift */; };
 		ACA8E3EB2B9DFB8E002A4297 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */; };
 		ACBB54B52B98F3EB00774132 /* zaliczenie_bryndalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */; };
 		ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB54B62B98F3EB00774132 /* ContentView.swift */; };
@@ -65,7 +63,6 @@
 
 /* Begin PBXFileReference section */
 		AC8DB5512B990D370061FE3A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		AC8DB5532B990D450061FE3A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AC8DB5562B990D960061FE3A /* TextWithSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithSubtitle.swift; sourceTree = "<group>"; };
 		AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.ViewModel.swift; sourceTree = "<group>"; };
 		AC8DB5612B9923170061FE3A /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
@@ -82,7 +79,6 @@
 		ACA8E3DA2B9C9730002A4297 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ACA8E3DC2B9C974D002A4297 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ACA8E3DE2B9CC585002A4297 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		ACA8E3E52B9DBE86002A4297 /* CognitoUser.protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoUser.protocol.swift; sourceTree = "<group>"; };
 		ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		ACBB54B12B98F3EB00774132 /* zaliczenie_bryndal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zaliczenie_bryndal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB54B42B98F3EB00774132 /* zaliczenie_bryndalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zaliczenie_bryndalApp.swift; sourceTree = "<group>"; };
@@ -160,7 +156,6 @@
 				ACA0D36D2B9A027B00A61572 /* Cards */,
 				AC8DB5652B9924730061FE3A /* Buttons */,
 				AC8DB5552B990D840061FE3A /* Texts */,
-				AC8DB5532B990D450061FE3A /* HeaderView.swift */,
 				AC8DB5612B9923170061FE3A /* PasswordView.swift */,
 				AC8DB5632B9924060061FE3A /* EmailView.swift */,
 				ACA8E3D82B9C96A3002A4297 /* NavigationView.swift */,
@@ -179,7 +174,6 @@
 		AC8DB55A2B9910250061FE3A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				ACA8E3E42B9DBE71002A4297 /* protocols */,
 				AC8DB55B2B9910420061FE3A /* LoginView.ViewModel.swift */,
 				ACA8E3DE2B9CC585002A4297 /* MainViewModel.swift */,
 				ACA156252BA7810A001958D4 /* BrowserInagesViewModel.swift */,
@@ -213,25 +207,9 @@
 			path = Cards;
 			sourceTree = "<group>";
 		};
-		ACA1562B2BA79758001958D4 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		ACA8E3E42B9DBE71002A4297 /* protocols */ = {
-			isa = PBXGroup;
-			children = (
-				ACA8E3E52B9DBE86002A4297 /* CognitoUser.protocol.swift */,
-			);
-			path = protocols;
-			sourceTree = "<group>";
-		};
 		ACA8E3E92B9DFB83002A4297 /* networking */ = {
 			isa = PBXGroup;
 			children = (
-				ACA1562B2BA79758001958D4 /* New Group */,
 				ACA8E3EA2B9DFB8E002A4297 /* Networking.swift */,
 			);
 			path = networking;
@@ -447,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA8E3EB2B9DFB8E002A4297 /* Networking.swift in Sources */,
-				AC8DB5542B990D450061FE3A /* HeaderView.swift in Sources */,
 				AC8DB5622B9923170061FE3A /* PasswordView.swift in Sources */,
 				ACA1562D2BA79B24001958D4 /* DateFormatter.swift in Sources */,
 				ACBB54B72B98F3EB00774132 /* ContentView.swift in Sources */,
@@ -458,7 +435,6 @@
 				AC8DB5572B990D960061FE3A /* TextWithSubtitle.swift in Sources */,
 				ACA0D36F2B9A028C00A61572 /* ImageCardView.swift in Sources */,
 				ACA8E3DF2B9CC585002A4297 /* MainViewModel.swift in Sources */,
-				ACA8E3E62B9DBE86002A4297 /* CognitoUser.protocol.swift in Sources */,
 				ACD96FAD2BA8F185004ADB64 /* ImageDetailsView.swift in Sources */,
 				ACA8E3DD2B9C974D002A4297 /* ProfileView.swift in Sources */,
 				ACA8E3D92B9C96A3002A4297 /* NavigationView.swift in Sources */,

@@ -11,7 +11,6 @@ struct HomeView: View {
     @StateObject var imageViewModel = ImageViewModel()
     @State private var isLoading = false
     @State private var isRefreshing = false
-//    @State private var offsetY: CGFloat = 0
 
     var body: some View {
         NavigationStack {

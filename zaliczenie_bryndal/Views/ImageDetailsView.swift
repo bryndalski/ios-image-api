@@ -24,7 +24,6 @@ struct ImageDetailsView: View {
                     // Handle error state
                     Text("Failed to load image")
                 } else {
-                    // while loading
                     ProgressView()
                 }
             }
